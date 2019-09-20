@@ -1,0 +1,29 @@
+[
+	{
+		"description": "不带参数的get请求，定义method为get",
+		"request": {
+			"uri": "/MethodOnGet",
+			"method": "get"
+		},
+		"response": {
+			"text": "the method without parameter"
+		}
+	},
+	{
+		"description": "带参数的get请求,参数关键字为queries，具体字段自行定义proCode、proName",
+		"request": {
+			"uri": "/MethodOnGetPara",
+			"method": "get",
+			"queries": {
+				"proCode": "360001",
+				"proName": "国泰基金"
+			}
+		},
+		"response": {
+			"text": "有参post方法the method with parameter: proCode、proName",
+			"headers":{
+				"Content-Type":"text/html;charset=gbk"
+			}
+		}
+	}
+]

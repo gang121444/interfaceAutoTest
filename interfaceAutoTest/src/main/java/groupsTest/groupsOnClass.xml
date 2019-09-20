@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<suite name="groupsOnClass">
+	<test name="groups on clsss">
+		<groups>
+			<run>
+				<include name="stu"></include>
+				//设置可执行的组
+				<include name="teacher"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="groupsTest.groupsOnClass1" />
+			<class name="groupsTest.groupsOnClass2" />
+			<class name="groupsTest.groupsOnClass3" />
+		</classes>
+	</test>
+
+</suite>

@@ -1,0 +1,41 @@
+[
+	{
+		"description": "带cookie的get方法",
+		"request": {
+			"uri": "/MethodWithCookieOnGet",
+			"method": "get",
+			"cookies": {
+				"login": "true"
+			}
+		},
+		"response": {
+			"headers": {
+				"Content-Type": "text/html;charset=gbk"
+			},
+			"text": "cookie为login：true"
+		}
+	},
+	{
+		"description": "带cookies的post方法",
+		"request": {
+			"uri": "/MethodWithCookieOnPost",
+			"method": "post",
+			"cookies": {
+				"login": "true"
+			},
+			"json": {
+				"proCode": "360003",
+				"proName": "光大保德信"
+			}
+		},
+		"response": {
+			"headers": {
+				"Content-Type": "text/html;charset=gbk"
+			},
+			"json": {
+				"status": "查询成功",
+				"taCode": "36-光大保德信"
+			}
+		}
+	}
+]

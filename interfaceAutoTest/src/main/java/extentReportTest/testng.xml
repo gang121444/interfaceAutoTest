@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<suite name="套件测试">
+
+	<test name="套件测试demo">
+		<classes>
+		<class name="extentReportTest.extentDemo1">
+			<method>
+				<include name="test1" />
+				<include name="test2" />
+				<include name="test3" />
+				<include name="logDemo" />
+			</method>
+			</class>
+		</classes>
+	</test>
+	<listeners>
+		<listener class-name="extentReportTest.TestngListener" />		
+	</listeners>
+</suite>

@@ -1,0 +1,29 @@
+[
+	{
+		"description": "重定向至其它网站",
+		"request": {
+			"uri": "/MethodOnRedirect",
+			"method": "get"
+		},
+		"redirectTo": "http://www.baidu.com"
+	},
+	{
+		"description": "被重定向的请求",
+		"request": {
+			"uri": "/redirectSelf"
+		},
+		"response": {
+			"headers": {
+				"Content-Type": "text/html;charset=gbk"
+			},
+			"text": "重定向成功"
+		}
+	},
+	{
+		"description": "重定向至自己网页",
+		"request": {
+			"uri": "/MyStation"
+		},
+		"redirectTo": "/redirectSelf"
+	}
+]

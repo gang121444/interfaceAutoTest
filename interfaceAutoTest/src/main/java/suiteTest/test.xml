@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<suite name="testSuite">
+	//自定义的测试集合名称
+	<test name="test">
+		//自定义的测试名称
+		<classes>
+			//定义被运行的测试类
+			<class name="suiteTest.SuiteConfig" />
+			<class name="suiteTest.Login" />
+			<class name="suiteTest.Pay" />
+		</classes>
+	</test>
+<!--  	
+	<test name="pay">
+		<classes>
+			<class name="suiteTest.Pay" />
+		</classes>
+	</test>
+-->
+</suite>

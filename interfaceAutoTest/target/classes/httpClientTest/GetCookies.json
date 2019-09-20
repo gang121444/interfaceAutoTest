@@ -1,0 +1,20 @@
+[
+	{
+		"description": "返回cookie",
+		"request": {
+			"uri": "/getCookie",
+			"method": "get"
+		},
+		"response": {
+			"cookies": {
+				"login": "success",
+				"status": "X000",
+				"fileInputStream":"fight"
+			},
+			"text": "打开开发者工具->application->cookies->查看返回的cookie信息",
+			"headers": {
+				"Content-Type": "text/html;charset=gbk"
+			}
+		}
+	}
+]

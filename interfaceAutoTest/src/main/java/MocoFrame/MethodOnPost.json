@@ -1,0 +1,32 @@
+[
+	{
+		"description": "无参post方法",
+		"request": {
+			"uri": "/MethodOnPost",
+			"method": "post"
+		},
+		"response": {
+			"text": "无参post方法，无法用浏览器直接获取",
+			"headers":{
+				"Content-Type":"text/html;charset=gbk"
+			}
+		}
+	},
+	{
+		"description": "带参数的post方法：参数关键字为forms，与get方法的queries不同",
+		"request": {
+			"uri": "/MethodOnPostParam",
+			"method": "post",
+			"forms": {
+				"proCode": "360002",
+				"proName": "国泰君安"
+			}
+		},
+		"response": {
+		"headers":{
+			"Content-Type":"text/html;charset=gbk"
+		},
+			"text": "有参post方法：参数为proCode、proName"
+		}
+	}
+]

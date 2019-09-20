@@ -1,0 +1,12 @@
+[
+	{
+		"description":"这是demo文件,描述仅为了说明文件作何用，其中uri是指web页面访问的路径，如：localhost:8899/demo",
+			"request":
+		 {
+			"uri": "/demo"		
+		},
+		"response": {
+			"text": "hello,moco"
+		}
+	}
+]

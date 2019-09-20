@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<suite name="para">
+	<test name="param">
+		<classes>
+		<parameter name="userName" value="剑气近"/>
+		<parameter name="age" value="28"/>
+			<class name="parameterTest.parameterOnXml" />
+		</classes>
+	</test>
+</suite>
