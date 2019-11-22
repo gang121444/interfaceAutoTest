@@ -14,7 +14,7 @@ import org.testng.annotations.Test;
 /*使用httpclient发送请求、接收响应：
  * 	1、创建httpclient对象；
  * 	2、创建请求方法的实例，并指定请求url。如需要发送get或post请求，创建HttpGet、HttpPost对象；
- * 	3、如需要发送请求参数，可调用HttpGet、HttpPost共同的setParams（HetpParams params）方法来添加请求参数。对于HttpPost而言，
+ * 	3、如需要发送请求参数，可调用HttpGet、HttpPost共同的setParams（HttpParams params）方法来添加请求参数。对于HttpPost而言，
  * 		还可调用setEntity(HttpEntity entity)方法来设置请求参数；
  * 	4、调用HttpClient对象的execute(HttpUriRequest request)发送请求，该方法返回一个HttpResponse；
  * 	5、调用HttpResponse的getAllHeaders()、getHeaders(String name)等方法可获取服务器的响应头。

@@ -1,0 +1,43 @@
+[
+	{
+		"description": "返回cookie的get请求",
+		"request": {
+			"uri": "/getCookies",
+			"method": "get"
+		},
+		"response": {
+			"cookies": {
+				"login": "true"
+			},
+			"text": "按下F12，选择network，查看接口调取情况",
+			"headers": {
+				"Content-Type": "text/html;charset=utf-8"
+			}
+		}
+	},
+	{
+		"description": "使用携带的cookie访问该接口",
+		"request": {
+			"uri": "/post/with/cookies",
+			"method": "post",
+			"cookies": {
+				"login": "true"
+			},
+			"json": {
+				"name": "spmcs",
+				"age": "3"
+			}
+		},
+		"response": {
+			"statue": "1",
+			"json": {
+				"proCode": "360001",
+				"Fname": "国泰民安"
+			},
+			"text": "成功获取cookies，并访问post请求",
+			"headers": {
+				"Content-Type": "text/html;charset=gbk"
+			}
+		}
+	}
+]
